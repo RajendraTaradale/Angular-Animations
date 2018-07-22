@@ -19,17 +19,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 Angular Animation Methods
 Let's talk briefly about the purpose of each of these methods:
 
-trigger(): accepts a name for the animation trigger and an array of state and transition methods to configure the animation
-state(): accepts the name of the state of the animation, such as 'active' or 'inactive', and styles that should be applied conditionally when in that state
-style(): sets CSS styles and can be passed in to configure a state, transition, or animation
-transition(): accepts a string explaining which states are being transitioned and which direction the transition is going (e.g., 'active => inactive'), and any styles or animations to configure the transition
+trigger(): accepts a name for the animation trigger and an array of state and transition methods to configure the animation</br>
+state(): accepts the name of the state of the animation, such as 'active' or 'inactive', and styles that should be applied conditionally when in that state</br>
+style(): sets CSS styles and can be passed in to configure a state, transition, or animation</br>
+transition(): accepts a string explaining which states are being transitioned and which direction the transition is going (e.g., 'active => inactive'), and any styles or animations to configure the transition</br>
 animate(): accepts a numeric duration in milliseconds, or a CSS string specifying both the duration and easing (e.g., 250 or '250ms ease-in')
 
-
-State *: element is present
-State void: element is removed
-Transition void => *: element is being added (alias: :enter)
-Transition * => void: element is being removed (alias: :leave)
+</br>
+State *: element is present </br>
+State void: element is removed </br>
+Transition void => *: element is being added (alias: :enter) </br>
+Transition * => void: element is being removed (alias: :leave) </br>
 
 ---Common animation file
 
@@ -59,3 +59,5 @@ import { expandCollapse } from './../../../core/expand-collapse.animation';
 ----Use in Html
 
  <div class="dtclass" *ngIf="true" [@expandCollapse]>
+ 
+ ---Simple---
